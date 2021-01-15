@@ -1,0 +1,23 @@
+/* TODO: Create classes */
+.NavLink {
+    margin: 0 !important;
+    color: black;
+    background-color: burlywood ;
+    text-decoration: none !important;
+    padding: 25px;
+    margin-top: 0 !important;
+    top: 0 !important; 
+
+
+}
+
+.NavLink:hover {
+    cursor: pointer;
+    background-color: rgb(182, 137, 79);
+}
+
+.NavLink:active,
+.NavLink.active {
+    color: black;
+    background-color: rgb(182, 123, 47);
+}

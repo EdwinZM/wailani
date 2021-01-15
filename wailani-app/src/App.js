@@ -1,22 +1,25 @@
 import React, {Fragment} from 'react';
-import Toolbar from './Components/Toolbar/Toolbar';
-import {Route} from 'react-router';
+import Home from './Containers/Home';
+import Products from './Containers/Products';
+import About from './Containers/About';
+import {Route, Switch, Redirect} from 'react-router';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Toolbar/>
-    </div>
-  );
-  <Fragment>
-    <Route path='/products' component={Products}/>
+    <Fragment>
+    <Switch>
+     <Route path='/products' component={Products}/>
     {/* The products component will have a cards component made of cards with the 
     products */}
-    <Route path='/about' component={About}/>
+      <Route path='/about' component={About}/>
     {/* About is a component with the description of Wailani */}
-  </Fragment>
-  
+     <Route path='/' exact component={Home}/>
+     <Redirect to='/'/>
+    </Switch>
+
+    </Fragment>
+  );
 
 };
 
