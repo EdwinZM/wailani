@@ -19,3 +19,12 @@
     left: 16px !important;
 }
 
+.NavItems {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .NavItems {
+    display: flex;
+  }
+}

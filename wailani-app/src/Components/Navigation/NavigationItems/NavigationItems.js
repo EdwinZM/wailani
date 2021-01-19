@@ -22,9 +22,9 @@ function NavigationItems() {
         )
     }
     return (
-        <ul className={classes.NavigationItems}>
+        <div className={classes.NavigationItems}>
              {items}
-        </ul>
+        </div>
        
     )
 }

@@ -2,14 +2,16 @@
     margin: 0px ;
     padding: 11px;
     list-style: none;
-    display: flex;
-    flex-flow: column !important;
     height: 100%;
     box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 @media (min-width: 500px) {
     .NavigationItems {
-        flex-flow: row !important;
+        flex-flow: row nowrap;
     }
 }
+
+
