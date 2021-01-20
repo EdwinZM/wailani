@@ -1,8 +1,6 @@
 .NavigationItems {
     margin: 0px ;
     padding: 11px;
-    list-style: none;
-    height: 100%;
     box-sizing: border-box;
     display: flex;
     flex-flow: column wrap;

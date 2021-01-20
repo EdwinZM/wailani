@@ -12,14 +12,11 @@
   }
   
   .Open {
-    transform: translateX(40%);
+    transform: translateX(45%);
   }
   
   .Closed {
-    transform: translateX(400%);
+    transform: translateX(200%);
   }
 
-  .NavItems{
-    display: flex;
-    flex-direction: column;
-  }
+  

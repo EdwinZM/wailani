@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import NavigationItems from '../NavigationItems/NavigationItems';
 import classes from './SideDrawer.module.css';
+import Backdrop from './Backdrop'
 
 const sideDrawer = props => {
 
@@ -10,10 +11,13 @@ const sideDrawer = props => {
   }
 
   return (
-    <nav className={attachedClasses.join(' ')}>
-        <NavigationItems/>
-    </nav>
+    <Fragment>
+      <Backdrop show={props.show} clicked={props.closed}/>
+       <nav className={attachedClasses.join(' ')}>
+         <NavigationItems/>
+       </nav>
+    </Fragment>
   )
 }
 
-export default sideDrawer
+export default sideDrawer;

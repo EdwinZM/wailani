@@ -10,7 +10,6 @@ const Toolbar = (props) => {
 
     const drawerClicked = () => {
         setDrawerOpen(prevState => !prevState);
-        console.log(drawerOpen)
     }
     
     return (
@@ -18,7 +17,7 @@ const Toolbar = (props) => {
             {/* change the logo div to an image later */}
             <div className={classes.Logo}>Logo</div>
              <DrawerToggle click={drawerClicked}/>
-             <SideDrawer show={drawerOpen}/>
+             <SideDrawer show={drawerOpen} closed={drawerClicked}/>
              <div className={classes.NavItems}>
              <NavigationItems/>
              </div>
