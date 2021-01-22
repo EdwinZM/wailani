@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react';
 import Toolbar from '../Components/Toolbar/Toolbar';
+import Slider from '../Components/Layout/Slider/Slider';
 
 function Home() {
     return (
         <Fragment>
          <Toolbar/>
-         <h1>Home Page</h1>
+         <Slider/>
         </Fragment>
     )
 };
