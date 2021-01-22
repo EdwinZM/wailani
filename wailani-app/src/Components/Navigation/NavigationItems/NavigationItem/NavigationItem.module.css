@@ -4,15 +4,16 @@
     color: black;
     background-color: burlywood ;
     text-decoration: none !important;
-    padding: 25px;
+    padding: 20px;
     margin-top: 0 !important;
     top: 0 !important; 
-    font-size: 20px;
+    font-size: 18px;
     font-family:'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
 .NavLink:hover {
+    color: black;
     cursor: pointer;
     background-color: rgb(182, 137, 79);
 }
