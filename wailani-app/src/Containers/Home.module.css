@@ -1,0 +1,14 @@
+.Cards {
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 17% 17%;
+    grid-gap: 10px;
+}
+
+@media (max-width: 500px) {
+    .Cards {
+        grid-template-columns: 100%;
+    }
+}

@@ -11,6 +11,8 @@
     background-color: burlywood;
       display: flex;
     justify-content: space-between!important;
+    position: fixed;
+    z-index: 300;
 }
 
 .Logo {

@@ -1,0 +1,8 @@
+.Card {
+    display: grid;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    grid-column-end: auto;
+    grid-row-end: auto;
+    place-self: center;
+}
