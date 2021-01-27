@@ -1,6 +1,7 @@
 import React, {Fragment, useState} from 'react';
 import image1 from '../../../Images/unnamed.png'
 import Card from './Card/Card';
+import classes from './Cards.module.css';
 
 const Cards = () => {
     const [imageState, setImageState] = useState(image1);
@@ -15,7 +16,9 @@ const Cards = () => {
     //Get rid of this component since we won't use it, import the card individualy
     //to each component.
     return (
-        <div>
+        <div className={classes.Cards}>
+            <Card image={imageState} title={titleState} text={textState} />
+            <Card image={imageState} title={titleState} text={textState} />
             <Card image={imageState} title={titleState} text={textState} />
             <Card image={imageState} title={titleState} text={textState} />
             <Card image={imageState} title={titleState} text={textState} />

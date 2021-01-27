@@ -21,7 +21,7 @@
 .NavLink:active,
 .NavLink.active {
     color: black;
-    background-color: rgb(173, 124, 58);
+    background-color: rgb(190, 142, 79);
 }
 
 @media (max-width: 500px) {

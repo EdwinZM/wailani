@@ -1,8 +1,11 @@
 .Card {
+    margin: 10px;
     display: grid;
     grid-column-start: auto;
     grid-row-start: auto;
     grid-column-end: auto;
     grid-row-end: auto;
     place-self: center;
+    display: flex;
+    flex-wrap: wrap;
 }

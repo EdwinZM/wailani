@@ -4,7 +4,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 17% 17%;
-    grid-gap: 10px;
+    grid-gap: 15px;
+    display: flex;
 }
 
 @media (max-width: 500px) {
