@@ -1,5 +1,4 @@
 .Cards {
-    padding: 10px;
     margin: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
