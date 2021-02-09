@@ -1,4 +1,10 @@
 .height {
-  height: 450px;
+  height: 225px;
   margin-top: 60px
+}
+
+@media (min-width: 500px) {
+  .height {
+    height: 450px;
+  }
 }

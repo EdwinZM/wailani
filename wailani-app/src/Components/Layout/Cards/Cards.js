@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, {useState} from 'react';
 import image1 from '../../../Images/unnamed.png'
 import Card from './Card/Card';
 import classes from './Cards.module.css';
