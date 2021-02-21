@@ -15,3 +15,8 @@
     background-size: cover;
     background-repeat: no-repeat;
 } */
+@media (max-width: 500px) {
+    .AboutBody {
+        display: inline-block;
+    }
+}
