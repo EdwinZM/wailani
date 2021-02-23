@@ -1,13 +1,48 @@
 .Body {
-    padding: 10px;
-    margin: 160px 200px 200px 200px;
-    box-shadow: 0 3px 3px 1px rgb(204, 204, 204);
-    border-radius: 5%;
+    margin-top: 60px;
+    display: inline-block;
+    box-sizing: border-box
 }
 
 .Image {
     width: 100%;
     height: 50%;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.Text {
+    padding: 10px;
+    margin: 10px;
+}
+
+.ButtonAndPrice {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Button {
+    border: none;
+    padding: 8px;
+    background-color: burlywood;
+    border-radius: 5%;
+    box-shadow: 1px 3px 3px 1px rgb(204, 204, 204);
+}
+
+.Button:active {
+    padding: 7px;
+}
+
+@media (min-width: 500px) {
+    .Body {
+        margin: 80px 200px 20px 200px;
+        box-shadow: 0 3px 3px 1px rgb(204, 204, 204);
+        border-radius: 5%;
+        box-sizing: border-box;
+    }
+    .Image {
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+    }
 }

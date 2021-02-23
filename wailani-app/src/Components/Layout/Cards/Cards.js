@@ -3,7 +3,7 @@ import image1 from '../../../Images/unnamed.png'
 import Card from './Card/Card';
 import classes from './Cards.module.css';
 
-const Cards = () => {
+const Cards = (props) => {
     const [imageState, setImageState] = useState(image1);
     const [titleState, setTitleState] = useState('Title');
     const [textState, setTextState] = useState('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ')
@@ -15,16 +15,21 @@ const Cards = () => {
     //create a loop to fetch six products and put them in cards.
     //Get rid of this component since we won't use it, import the card individualy
     //to each component.
+    const productRedirect = () => {
+        let path = '/products/:id';
+        window.location.pathname = path
+    }
+    
     return (
         <div className={classes.Cards}>
-            <Card image={imageState} title={titleState} text={textState} />
-            <Card image={imageState} title={titleState} text={textState} />
-            <Card image={imageState} title={titleState} text={textState} />
-            <Card image={imageState} title={titleState} text={textState} />
-            <Card image={imageState} title={titleState} text={textState} />
-            <Card image={imageState} title={titleState} text={textState} />
-            <Card image={imageState} title={titleState} text={textState} />
-            <Card image={imageState} title={titleState} text={textState} />
+            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
+            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
+            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
+            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
+            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
+            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
+            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
+            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
         </div>
     )
 }

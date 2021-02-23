@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import classes from './Card.module.css';
 
 function myCard(props) {
+    
     return (
         <div className={classes.Card}>
             <Card style={{ width: '18rem' }}>
