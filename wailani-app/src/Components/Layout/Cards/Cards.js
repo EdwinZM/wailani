@@ -15,21 +15,17 @@ const Cards = (props) => {
     //create a loop to fetch six products and put them in cards.
     //Get rid of this component since we won't use it, import the card individualy
     //to each component.
-    const productRedirect = () => {
-        let path = '/products/:id';
-        window.location.pathname = path
-    }
     
     return (
         <div className={classes.Cards}>
-            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
-            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
-            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
-            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
-            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
-            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
-            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
-            <Card image={imageState} title={titleState} text={textState} onClick={productRedirect}/>
+            <Card image={imageState} title={titleState} text={textState} click={props.clicked}/>
+            <Card image={imageState} title={titleState} text={textState} click={props.clicked}/>
+            <Card image={imageState} title={titleState} text={textState} click={props.clicked}/>
+            <Card image={imageState} title={titleState} text={textState} click={props.clicked}/>
+            <Card image={imageState} title={titleState} text={textState} click={props.clicked}/>
+            <Card image={imageState} title={titleState} text={textState} click={props.clicked}/>
+            <Card image={imageState} title={titleState} text={textState} click={props.clicked}/>
+            <Card image={imageState} title={titleState} text={textState} click={props.clicked}/>
         </div>
     )
 }

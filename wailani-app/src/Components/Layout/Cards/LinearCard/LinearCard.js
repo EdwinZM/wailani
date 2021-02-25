@@ -4,7 +4,7 @@ import image from '../../../../Images/unnamed.png';
 
 function LinearCard(props) {
     return (
-        <div className={classes.LinearCard}>
+        <div className={classes.LinearCard} onClick={props.clicked}>
             <img src={image} alt='product'
             className={classes.Image}/>
             <h3>{props.title}</h3>
